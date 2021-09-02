@@ -2,27 +2,78 @@
  basic linux commands for beginners :)
  
  
+ . Conceptos básicos antes de empezar 
  
+	- ¿Qué es GNU/Linux?
+
+
+LINUX (o GNU/LINUX, más correctamente) es un Sistema Operativo como MacOS, DOS o Windows. Es decir, Linux es el software necesario para que tu ordenador te permita utilizar programas como: editores de texto, juegos, navegadores de Internet, etc. Linux puede usarse mediante un interfaz gráfico al igual que Windows o MacOS, pero también puede usarse mediante línea de comandos como DOS.
+
+ Fuente: https://www.ciberaula.com/articulo/que_es_linux/
+ 
+ Podríamos clasificarlo de la siguiente forma:
+ 
+ GNU 		/ 	Linux
+ Aplicaciones		Kernel
+ 
+ Kernel: Software que constituye una parte fundamental del sistema operativo, y se define como la parte que se ejecuta en modo privilegiado. En resumen, es el núcleo del sistema.
+ Cada distribución de Linux puede utilizar una interfaz gráfica diferente (la manera en que vemos nuestro escritorio y sus aplicaciones)
+ 
+ . Tipos de entornos gráficos
+ 
+	- KDE, GNOME, PLASMA, UNITY
+	
+. Tipos de sistema de ficheros en Linux
+
+	- EXT2, EXT3, EXT4
+	
+	
+. Extensiones o ejecutables 
+	
+	- TAR, RPM (OPENSUSE) Y DEB
+	
+	
+	
+	
+	
+Estructura de ficheros en LINUX
+
+<img>https://ayudalinux.com/wp-content/uploads/2017/03/Sistema-de-archivos-de-Linux-2.jpg</img>
+	
+	
  <b> Primeros pasos </b>
-. apt-get update
-. apt-get install aptitude (Más actual)
-ahora podemos usar aptitude search "nombreprograma" para buscar en nuestros repositorios
-para saber si un paquete está instalado:
-. whereis <aptitude>
-. aptitude install openssh-server (necesario para usar putty)
+ 
+ Una vez arrancada nuestra distro de Linux (Ubuntu, Mint, Kali Linux, Debian, etc..) procedemos a actualizar las librerías:
+ 
+ 
+. apt-get 
+
+	- upgrade
+	- update
+	- install aptitude (Gestor de paquetes más actual)
+	
+Ahora podemos usar aptitude search "nombreprograma" para buscar en nuestros repositorios y saber si un paquete está instalado:
+
+. whereis "aptitude" o cualquier otro programa
 
 . apt	
+	
 	-install
 	-show
 	-update
 	-check → revisa las dependencias
 	--purge remove  <fichero/programa> → elimina programa	
+	
 . aptitude
+
 	-install
 	-update
 	-search
 	-remove 	→ elimina paquete, pero no los archivos de conf.
 	-purge		→ quita todo de ese paquete
+	
+
+	
 . dpkg 
 
 	--status <nombreprograma>
@@ -31,6 +82,12 @@ para saber si un paquete está instalado:
 	-r 
 
 
+Todos los comandos que hacen movimiento en el sistema necesitan permisos de administrador. El permiso se lo otorgamos con el comando SUDO.
+Para encontrar el fichero de administradores, 
+
+	sudo nano /etc/sudoers
+	
+	
 
 Red:
 Cambiar la configuracion de red dinamica
@@ -100,7 +157,7 @@ Usuarios:
 
 . usermod (para modificar ususario:)
 	
-	-l <nombrenuevo> <usuario> → cambia nombre
+	-l <nombrenuevo> <usuario> 	→ cambia nombre
 	-c "comentario" <usuario> 	→  establece breve comentario
 	-d "directorio" <usuario>	→ cambia directorio de inicio del usuario
 	-g "grupo" <usuario>		→ cambia el grupo principal
