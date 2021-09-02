@@ -36,9 +36,9 @@ LINUX (o GNU/LINUX, más correctamente) es un Sistema Operativo como MacOS, DOS 
 	
 	
 	
-Estructura de ficheros en LINUX
+<u>Estructura de ficheros en LINUX</u>
 
-<img>https://ayudalinux.com/wp-content/uploads/2017/03/Sistema-de-archivos-de-Linux-2.jpg</img>
+<b>/</b>
 	
 	
  <b> Primeros pasos </b>
