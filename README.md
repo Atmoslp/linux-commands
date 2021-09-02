@@ -1,8 +1,7 @@
-# linux-commands
- basic linux commands for beginners :)
+<h1># linux-commands</h1>
+
  
- 
- . Conceptos básicos antes de empezar 
+ . <h2> Conceptos básicos antes de empezar </h2>
  
 	- ¿Qué es GNU/Linux?
 
@@ -38,7 +37,27 @@ LINUX (o GNU/LINUX, más correctamente) es un Sistema Operativo como MacOS, DOS 
 	
 <u>Estructura de ficheros en LINUX</u>
 
-<b>/</b>
+							   / (RAÍZ)
+   							   |
+	/bin	/boot	/dev	/etc	/home	/lib	/media	/mnt	/opt	/sbin	/srv	/tmp	/usr	/var	/root	/proc
+	
+
+/bin
+/boot
+/dev
+/etc
+/home
+/lib
+/media
+/mnt
+/opt
+/sbin
+/srv
+/tmp
+/usr
+/var
+/root
+/proc
 	
 	
  <b> Primeros pasos </b>
